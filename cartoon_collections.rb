@@ -15,7 +15,12 @@ def long_planeteer_calls(calls)# code an argument here
   calls.any? do |n| n.length > 4 end
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(strings_array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  i = 0
+  strings_array.any? do |n| n == cheese_types[i]
+    i += 1
+  end
+
 end

@@ -18,7 +18,6 @@ end
 def find_the_cheese(strings_array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
-  strings_array.any? do |n| n == cheese_types[0] || n == cheese_types[1] || n == cheese_types[2]
+  strings_array.find do |n| n == cheese_types[0] || n == cheese_types[1] || n == cheese_types[2]
 end
 end
